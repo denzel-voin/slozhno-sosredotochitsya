@@ -18,6 +18,7 @@
     --main-title-color: #353430;
     --main-paragraph-color: #353430;
     --text-shadow: #FF8DCB;
+    --title-shadow: #FF0070;
 
     .decoration-rec {
         display: none;
@@ -35,6 +36,7 @@
         --main-title-color: #353430;
         --main-paragraph-color: #353430;
         --text-shadow: #FF8DCB;
+        --title-shadow: #FF0070;
     }
 
     .decoration-rec {

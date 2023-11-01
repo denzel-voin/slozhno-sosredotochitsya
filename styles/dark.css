@@ -17,5 +17,15 @@
     --title-background-color: #ff0070;
     --main-title-color: #ff0070;
     --main-paragraph-color: #F1B2CE;
-    --text-shadow: #F1B2CE;
+    --text-shadow: #ff0070;
+
+    .decoration-rec {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .decoration-rec {
+        display: block;
+    }
 }

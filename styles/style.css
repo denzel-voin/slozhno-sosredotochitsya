@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    font-family: IBM Plex mono, monospace;
+    font-family: 'IBM Plex mono', monospace;
     background: var(--background-image);
     margin: 0 auto;
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -36,13 +36,15 @@
     font-weight: 400;
     cursor: pointer;
     transition: .2s ease-in-out;
+    color: var(--accent-color);
 }
 
 .header__title {
     font-family: inherit;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    text-shadow: 4px 4px var(--accent-color);
+    text-shadow: 4px 4px var(--title-background-color);
     line-height: 95.70px;
+    color: var(--title-color);
 }
 
 .header__tittle-margin {
@@ -60,6 +62,7 @@
 
 .header__theme-menu-button_active {
     pointer-events: none;
+    outline: 1px solid var(--accent-color);
 }
 
 .decorated-zone:before {
@@ -85,6 +88,7 @@
 }
 
 .decoration-rec {
+    display: none;
     text-transform: uppercase;
     color: var(--accent-color);
     position: absolute;
@@ -104,17 +108,9 @@
     border-radius: 100px;
 }
 
-.header__title {
-    color: var(--title-color);
-}
-
 .title-decor {
     color: var(--tittle-decor-color);
     background-color: var(--title-background-color);
-}
-
-.header__theme-menu-button {
-    color: var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
@@ -127,10 +123,6 @@
 
 .header__theme-menu-button:focus-visible {
     outline: none;
-}
-
-.header__theme-menu-button_active {
-    outline: 1px solid var(--accent-color);
 }
 
 .main {
@@ -163,8 +155,17 @@
 }
 
 .main__paragraph-link {
+    transition: 2s ease;
     text-decoration: none;
     text-shadow: 2px 2px var(--text-shadow);
+}
+
+.main__paragraph-link:hover {
+    border-bottom: 1px solid var(--main-paragraph-color);
+}
+
+.main__paragraph-link:focus-visible {
+    outline: 1px solid var(--main-paragraph-color);
 }
 
 .page__subtitle-item {
@@ -196,7 +197,7 @@
     justify-content: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 767px) {
     .wrapper {
         width: 364px;
         grid-row-start: 3;
@@ -292,6 +293,7 @@
 @media (min-width: 1000px) {
     .header__title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+        text-shadow: 4px 4px var(--title-shadow);
     }
 
     .header {
