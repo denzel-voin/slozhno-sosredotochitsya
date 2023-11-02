@@ -19,10 +19,7 @@
     --main-paragraph-color: #353430;
     --text-shadow: #FF8DCB;
     --title-shadow: #FF0070;
-
-    .decoration-rec {
-        display: none;
-    }
+    --rec-display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,9 +34,6 @@
         --main-paragraph-color: #353430;
         --text-shadow: #FF8DCB;
         --title-shadow: #FF0070;
-    }
-
-    .decoration-rec {
-        display: none;
+        --rec-display: none;
     }
 }
