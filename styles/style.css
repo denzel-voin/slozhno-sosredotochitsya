@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    font-family: 'IBM Plex mono', monospace;
+    font-family: var(--font), monospace;
     background: var(--background-image);
     margin: 0 auto;
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -88,7 +88,7 @@
 }
 
 .decoration-rec {
-    display: none;
+    display: var(--rec-display);
     text-transform: uppercase;
     color: var(--accent-color);
     position: absolute;

@@ -6,6 +6,7 @@
 
 /* Файл variables.css */
 :root {
+    --font: 'IBM Plex mono';
     --accent-color: #ff0070;
     --title-color: #DB00FF;
     --tittle-decor-color: #000028;
@@ -16,4 +17,5 @@
     --main-paragraph-color: #F1B2CE;
     --text-shadow: #ff0070;
     --title-shadow: #ff0070;
+    --rec-display: block;
 }
